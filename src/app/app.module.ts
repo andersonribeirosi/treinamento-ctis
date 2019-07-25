@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { ConsultaMultaComponent } from './pages/consulta-multa/consulta-multa.component';
+import { CadastroMultaComponent } from './pages/cadastro-multa/cadastro-multa.component';
+import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veiculo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ConsultaMultaComponent
+    ConsultaMultaComponent,
+    CadastroMultaComponent,
+    CadastroVeiculoComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +24,6 @@ import { ConsultaMultaComponent } from './pages/consulta-multa/consulta-multa.co
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent]
+  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent]
 })
 export class AppModule { }
