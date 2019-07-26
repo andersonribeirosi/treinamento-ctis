@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-consulta-multa',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaMultaComponent implements OnInit {
 
-  constructor() { }
+  consultaPlacaForm: FormGroup;
+
+  constructor(private router: Router,
+    private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.criaFormsGroup();
+  }
+
+  criaFormsGroup() {
+    this.consultaPlacaForm = this.fb.group({
+      placa: ['', Validators.required],
+      cpf: ['', Validators.required]
+
+    });
+  }
+
+  back() {
+    this.router.navigateByUrl('/home')
   }
 
 }

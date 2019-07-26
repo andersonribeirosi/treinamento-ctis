@@ -1,0 +1,153 @@
+.scroll-content {
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 0 !important;
+  }
+
+  .back{
+  width: 4%;
+  margin-left: 1%;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  }
+
+  .input-group>.form-control {
+    flex: 0.7 1;
+  }
+
+  input {
+    flex: 0.47 1;
+    margin: 0 auto;
+  }
+
+  #cadastro{
+    color: #1a71b9;
+    padding-left: 20%;
+    padding-top: 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .content-flex {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 75px;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+    padding: 0 0 0 4px;
+  }
+
+  .align{
+    margin-left: 30%;
+  }
+
+  .button{
+    border-radius: 20px !important;
+    background-color: #1a71b9 !important;
+    height: 3rem !important;
+    width: 50% !important;
+    text-transform: none !important;
+    font-weight: 300 !important;
+    flex: 0.47 1;
+    margin: 0 auto;
+    color: white;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+  }
+
+  .button-voltar{
+    border-radius: 20px !important;
+    background-color: gray !important;
+    height: 3rem !important;
+    width: 50% !important;
+    text-transform: none !important;
+    font-weight: 300 !important;
+    flex: 0.47 1;
+    margin: 0 auto;
+    color: white;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+  }
+
+  img{
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  #error{
+    color: red;
+    font-size: 10px;
+    padding-top: -4px;
+    margin: -3px 0px 4px 15px;
+  }
+
+  input[type="text"] {
+    color: #363636;
+    width: 50%;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+
+  option:required:invalid {
+    color: gray;
+  }
+
+  p {
+    margin: 32px 0px 0px 90px;
+  }
+
+  input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+
+  .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon input[type="password"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon {
+    position: relative;
+  }
+
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 14px 15px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+
+  .inputWithIcon input[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+
+  .inputWithIcon input[type="password"]:focus + i {
+    color: dodgerBlue;
+  }
+
+  .menu-label {
+    color: white;
+    background-color: #424b52;
+    padding: 5px;
+    margin-top: 1em;
+    margin: 0 auto;
+    width: 200px;
+  }
+  

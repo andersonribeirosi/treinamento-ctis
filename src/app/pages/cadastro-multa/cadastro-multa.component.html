@@ -1,3 +1,21 @@
-<p>
-  cadastro-multa works!
-</p>
+<app-navbar></app-navbar>
+<div id="span">
+  <span class="menu-label label-primary d-block text-center">CADASTRAR MULTA</span>
+</div>
+<div><img class="back" src="../../assets/left-arrow.svg" (click)="back()"></div>
+<div class="align">
+
+
+  <form class="content-flex" id="formulario" class="form-group" [formGroup]="cadastroMultaForm">
+
+    <div class="inputWithIcon">
+      <input formControlName="data" type="text" placeholder="26/07/2019" #data disabled>
+    </div>
+
+    <div class="inputWithIcon">
+      <input formControlName="placa" type="text" placeholder="Insira a Placa" #placa required>
+    </div>
+
+    <button class="button" [disabled]="cadastroMultaForm.invalid" type="submit" (click)="cadastrarMulta()"><b>Cadastrar Multa</b></button>
+  </form>
+</div>
