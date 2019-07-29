@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class CadastroMultaComponent implements OnInit {
 
   cadastroMultaForm: FormGroup;
+  tipoMulta:  any[] = ['Grave', 'Gravíssima', 'Leve', 'Média'];
 
   constructor(private router: Router,
     private fb: FormBuilder) { }
@@ -21,7 +22,8 @@ export class CadastroMultaComponent implements OnInit {
   criaFormsGroup() {
     this.cadastroMultaForm = this.fb.group({
       placa: ['', Validators.required],
-      data: ['']
+      data: [''],
+      tipoMulta: ['', Validators.required]
 
     });
   }

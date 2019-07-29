@@ -150,3 +150,30 @@
     margin: 0 auto;
     width: 200px;
   }
+
+  select {
+    color: #363636;
+    width: 70%;
+    height: 43px;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    max-width: 50%;
+    padding-left: 36px;
+  }
+
+  select:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+
+  option:required:invalid {
+    color: gray;
+  }
+
+  
+  

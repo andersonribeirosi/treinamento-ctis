@@ -1,0 +1,84 @@
+/* .logo-sidebar {
+    width: 120px;
+    padding-top: 80px;
+  } */
+
+  .navbar.navbar-dark {
+    background-color: #1a71b9;
+    z-index: 20;
+  }
+  
+  .navbar-brand.logotipo {
+    position: absolute;
+    width: 50px;
+    margin: 0 6px -2px 0px;
+    right: 0;
+    bottom: 0;
+  }
+  
+  a{
+    color: #1a71b9 !important;
+  }
+  
+  .logotipo-sidebar {
+    width: 120px;
+    padding-top: 80px;
+  }
+  
+  .collapse .navbar-collapse {
+    background-color: white;
+  }
+  
+  .logo-sidebar {
+    width: 120px;
+    margin-left: 25%;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 9%;
+  }
+  
+  .sidebar-item {
+  margin-left: 40px;
+  display: block;
+  color: #1a71b9;
+  margin-bottom: 6%;
+  margin-left: 40px;
+  font-size: 16px;
+  }
+  
+  .icone{
+  width: 22px;
+  margin-right: 20px;
+  /* -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); */
+  }
+  
+  .sidebar {
+    background-color: white;
+    width: 350px;
+    z-index: 19;
+    top: 0;
+    position: absolute;
+    /* box-shadow: 5px 10px 30px 5px #CECECE; */
+    min-height: 100%;
+  }
+  
+  hr {
+    width: 130px;
+    height: 2px;
+    color: #F2F2F2
+  }
+  
+  .sidebar-menu {
+    margin-top: 100px;
+  }
+  
+  .logo-navbar {
+    margin-top: -4%;
+  }
+  
+  /* a:link {text-decoration: none} */
+  
