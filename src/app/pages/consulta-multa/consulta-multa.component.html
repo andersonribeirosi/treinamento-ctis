@@ -14,14 +14,14 @@
       <input formControlName="placa" type="text" placeholder="Insira a Placa" #placa required>
       <!-- <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i> -->
     </div>
-    <!-- <div id="error">{{ getError('name') }}</div> -->
+    <div id="error">{{ getError('placa') }}</div>
 
       <div class="inputWithIcon">
           <input
            formControlName="cpf" type="text" placeholder="Insira o CPF" #cpf required>
           <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
         </div>
-        <!-- <div id="error">{{ getError('studentAdditionalCpf')}}</div> -->
+        <div id="error">{{ getError('cpf')}}</div>
 
     <button class="button" [disabled]="consultaPlacaForm.invalid" type="submit" (click)="register()"><b>Consultar Multa</b></button>
   </form>
