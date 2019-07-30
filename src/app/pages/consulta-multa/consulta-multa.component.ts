@@ -26,7 +26,7 @@ export class ConsultaMultaComponent implements OnInit {
 
   criaFormsGroup() {
     this.consultaPlacaForm = this.fb.group({
-      placa: ['', Validations.required],
+      placa: ['', Validators.compose([Validations.minLength(7), Validations.maxLength(7), Validations.required])],
       cpf: ['', Validations.required]
 
     });
