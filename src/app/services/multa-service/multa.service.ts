@@ -11,6 +11,6 @@ export class MultaService {
   constructor(private http: HttpClient) { }
 
   getMultas(): Observable<any> {
-    return this.http.get(`${API.BASE_URL}${API.TOPICO}`);
+    return this.http.get(`${API.BASE_URL}${API.TESTE}`);
   }
 }
