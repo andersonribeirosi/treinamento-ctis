@@ -7,8 +7,8 @@ export const environment = {
 };
 
 export const API = {
-  BASE_URL: 'http://localhost:8080/',
-  TESTE: 'topicos',
+  BASE_URL: 'http://localhost:3000/',
+  ADD_MULTA: 'cadastroMulta'
 }
 
 /*

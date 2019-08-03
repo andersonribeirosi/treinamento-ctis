@@ -9,7 +9,7 @@
   <form class="content-flex" id="formulario" class="form-group" [formGroup]="cadastroMultaForm">
 
     <div class="inputWithIcon">
-      <input formControlName="data" type="text" placeholder="26/07/2019" #data disabled>
+      <input formControlName="data" type="text" placeholder="26/07/2019" #data>
     </div>
 
     <div class="inputWithIcon">
@@ -19,7 +19,7 @@
     <div class="column">
         <select formControlName="tipoMulta" class="form-control col-md-5" id="tipoMulta" name="tipoMulta" required>
           <option value="" disabled selected hidden>Tipo de Multa</option>
-          <option *ngFor="let multa of tipoMulta" [value]="multa.tipoMulta"> {{multa}}</option>
+          <option *ngFor="let multa of listMultas" [value]="multa.tipoMulta"> {{multa.tipoMulta}}</option>
         </select>
       </div>
 

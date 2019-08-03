@@ -11,7 +11,6 @@ import { Validations } from 'src/app/services/validations/validations';
 })
 export class ConsultaMultaComponent implements OnInit {
 
-
   consultaPlacaForm: FormGroup;
   listMultas: any;
 
@@ -28,7 +27,6 @@ export class ConsultaMultaComponent implements OnInit {
     this.consultaPlacaForm = this.fb.group({
       placa: ['', Validators.compose([Validations.minLength(7), Validations.maxLength(7), Validations.required])],
       cpf: ['', Validations.required]
-
     });
   }
 
