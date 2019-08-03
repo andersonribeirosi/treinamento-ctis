@@ -175,5 +175,18 @@
     color: gray;
   }
 
+  input[type="date"] {
+    color: #363636;
+    width: 50%;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    padding-left: 38px;
+  }
+
   
   

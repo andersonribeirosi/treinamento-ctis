@@ -39,6 +39,7 @@ export class TabMultaComponent implements OnInit {
       () => console.log('request complete'),
     );
     this.buscarMultas();
+    window.location.reload();
   }
 
 

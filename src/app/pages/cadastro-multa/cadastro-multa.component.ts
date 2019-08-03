@@ -57,6 +57,7 @@ export class CadastroMultaComponent implements OnInit {
       );
 
       this.cadastroMultaForm.reset();
+      this.router.navigateByUrl('/home');
     }
   }
 

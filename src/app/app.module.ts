@@ -12,6 +12,7 @@ import { CadastroMultaComponent } from './pages/cadastro-multa/cadastro-multa.co
 import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veiculo.component';
 import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.component';
 import { FilterPipe } from './pipes/filter/filter.pipe';
+import { PrimeiraAquisicaoComponent } from './pages/cadastro-veiculo/primeira-aquisicao/primeira-aquisicao/primeira-aquisicao.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FilterPipe } from './pipes/filter/filter.pipe';
     CadastroMultaComponent,
     CadastroVeiculoComponent,
     TabMultaComponent,
-    FilterPipe  
+    FilterPipe,
+    PrimeiraAquisicaoComponent  
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,6 @@ import { FilterPipe } from './pipes/filter/filter.pipe';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent, TabMultaComponent]
+  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent, TabMultaComponent, PrimeiraAquisicaoComponent]
 })
 export class AppModule { }

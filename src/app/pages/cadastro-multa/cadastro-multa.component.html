@@ -9,7 +9,7 @@
   <form class="content-flex" id="formulario" class="form-group" [formGroup]="cadastroMultaForm">
 
     <div class="inputWithIcon">
-      <input formControlName="data" type="text" placeholder="26/07/2019" #data>
+      <input formControlName="data" type="date" placeholder="26/07/2019" #data>
     </div>
 
     <div class="inputWithIcon">
@@ -26,4 +26,4 @@
     <button class="button" [disabled]="cadastroMultaForm.invalid" type="submit" (click)="cadastrarMulta()"><b>Cadastrar Multa</b></button>
   </form>
 </div>
-<app-tab-multa></app-tab-multa>
+<!-- <app-tab-multa></app-tab-multa> -->

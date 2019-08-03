@@ -5,3 +5,10 @@ img{
 .align{
     text-align: center;
 }
+
+.filter{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 9.5%;
+    width: 90.6%;
+}
