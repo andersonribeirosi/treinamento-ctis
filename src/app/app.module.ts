@@ -20,8 +20,7 @@ import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.co
     ConsultaMultaComponent,
     CadastroMultaComponent,
     CadastroVeiculoComponent,
-    TabMultaComponent
-  ],
+    TabMultaComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

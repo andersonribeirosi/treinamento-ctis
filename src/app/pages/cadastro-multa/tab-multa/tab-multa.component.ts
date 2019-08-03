@@ -17,13 +17,27 @@ export class TabMultaComponent implements OnInit {
     this.buscarMultas();
   }
 
-  buscarMultas(){
+  buscarMultas() {
     this.rest.buscarMultas().subscribe((data: MultaModel[]) => {
       this.multas = data;
-      console.log( this.multas);
+      console.log(this.multas);
 
     });
 
   }
+
+  removerMulta(id: number) {
+    console.log(id);
+
+    this.rest.excluirMultas(id).subscribe(
+      success => console.log('Usuário removido com sucesso.'),
+      
+      error => console.log('Erro ao remover novo usuário.'),
+      
+      () => console.log('request complete'),
+    );
+    this.buscarMultas();
+  }
+
 
 }

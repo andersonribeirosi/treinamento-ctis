@@ -27,4 +27,9 @@ export class MultaService {
   buscarMultas(): Observable<MultaModel[]> {
     return this.http.get<MultaModel[]>(`${API.BASE_URL}${API.ADD_MULTA}`);
   }
+
+  excluirMultas(id): Observable<MultaModel> {
+    const url = `${API.BASE_URL}${API.ADD_MULTA}/${id}`;
+    return this.http.delete<MultaModel>(url).pipe(take(1));
+  }
 }
