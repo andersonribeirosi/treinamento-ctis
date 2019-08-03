@@ -1,0 +1,39 @@
+<!-- <ng2-smart-table [settings]="settings" [source]="alunos"></ng2-smart-table> -->
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr class="align">
+        <th scope="col">Data do Ocorrido</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Tipo da Multa</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="align" *ngFor="let multa of multas">
+        <!-- <th scope="row">1</th> -->
+        <td>{{ multa.data }}</td>
+        <td>{{ multa.placa }}</td>
+        <td>{{ multa.tipoMulta }}</td>
+        
+        <td>
+          <button class="btn btn-outline-primary" (click)="removerAluno(item.id)">
+            <img
+              src="../../assets/lixeira.svg"
+              class="card-img-top"
+              alt="..."
+            />
+          </button>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <div class="col-auto">
+    <button type="text" class="btn btn-outline-primary" (click)="redireciona()">
+      Cadastrar novo aluno
+    </button>
+  </div>
+</div> -->

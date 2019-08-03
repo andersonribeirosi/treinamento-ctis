@@ -10,6 +10,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { ConsultaMultaComponent } from './pages/consulta-multa/consulta-multa.component';
 import { CadastroMultaComponent } from './pages/cadastro-multa/cadastro-multa.component';
 import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veiculo.component';
+import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veic
     NavbarComponent,
     ConsultaMultaComponent,
     CadastroMultaComponent,
-    CadastroVeiculoComponent
+    CadastroVeiculoComponent,
+    TabMultaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,6 @@ import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veic
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent]
+  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent, TabMultaComponent]
 })
 export class AppModule { }

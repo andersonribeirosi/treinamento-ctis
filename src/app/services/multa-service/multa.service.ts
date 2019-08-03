@@ -23,4 +23,8 @@ export class MultaService {
   addMultas(multa: MultaModel): Observable<MultaModel> {
     return this.http.post<MultaModel>(`${API.BASE_URL}${API.ADD_MULTA}`, multa).pipe(take(1));
   }
+
+  buscarMultas(): Observable<MultaModel[]> {
+    return this.http.get<MultaModel[]>(`${API.BASE_URL}${API.ADD_MULTA}`);
+  }
 }
