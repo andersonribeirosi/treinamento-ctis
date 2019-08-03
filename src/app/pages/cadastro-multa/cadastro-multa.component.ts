@@ -11,7 +11,6 @@ import { MultaService } from 'src/app/services/multa-service/multa.service';
 export class CadastroMultaComponent implements OnInit {
 
   cadastroMultaForm: FormGroup;
-  // tipoMulta:  any[] = ['Grave', 'Gravíssima', 'Leve', 'Média'];
   listMultas: any;
 
   constructor(private router: Router,

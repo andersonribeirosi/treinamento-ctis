@@ -11,6 +11,8 @@ export class TabMultaComponent implements OnInit {
 
   multas: MultaModel[];
 
+  filterMulta = '';
+
   constructor(private rest: MultaService) { }
 
   ngOnInit() {

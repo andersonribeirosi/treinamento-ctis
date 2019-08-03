@@ -11,6 +11,7 @@ import { ConsultaMultaComponent } from './pages/consulta-multa/consulta-multa.co
 import { CadastroMultaComponent } from './pages/cadastro-multa/cadastro-multa.component';
 import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veiculo.component';
 import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.component';
+import { FilterPipe } from './pipes/filter/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.co
     ConsultaMultaComponent,
     CadastroMultaComponent,
     CadastroVeiculoComponent,
-    TabMultaComponent  ],
+    TabMultaComponent,
+    FilterPipe  
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

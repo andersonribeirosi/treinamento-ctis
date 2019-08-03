@@ -1,15 +1,21 @@
+<div>
+  <input type="text" class="form-control" name="filterMulta" placeholder="Search..." [(ngModel)]="filterMulta">
+</div>
+
 <div class="container">
-  <table class="table">
+  <table class="table table-striped">
     <thead class="thead-dark">
       <tr class="align">
         <th scope="col">Data do Ocorrido</th>
         <th scope="col">Placa</th>
         <th scope="col">Tipo da Multa</th>
+        <th scope="col"></th>
+
 
       </tr>
     </thead>
     <tbody>
-      <tr class="align" *ngFor="let multa of multas">
+      <tr class="align" *ngFor="let multa of multas | filter: filterMulta">
         <td>{{ multa.data }}</td>
         <td>{{ multa.placa }}</td>
         <td>{{ multa.tipoMulta }}</td>

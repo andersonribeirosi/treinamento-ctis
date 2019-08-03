@@ -13,6 +13,7 @@ export class ConsultaMultaComponent implements OnInit {
 
   consultaPlacaForm: FormGroup;
   listMultas: any;
+  filterMulta = '';
 
   constructor(private router: Router,
     private fb: FormBuilder,
