@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrimeiraAquisicaoComponent implements OnInit {
 
-  maskCPF: any[] = [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/];
   
   constructor() { }
 

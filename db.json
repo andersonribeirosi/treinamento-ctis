@@ -20,9 +20,21 @@
     },
     {
       "placa": "MOR1904",
-      "data": "2019-08-03",
+      "data": "2019-08-09",
       "tipoMulta": "Leve",
       "id": 10
+    },
+    {
+      "placa": "NPT0190",
+      "data": "2019-08-09",
+      "tipoMulta": "Leve",
+      "id": 11
+    },
+    {
+      "placa": "NPT0190",
+      "data": "2019-08-15",
+      "tipoMulta": "Grave",
+      "id": 12
     }
   ],
   "comments": [
