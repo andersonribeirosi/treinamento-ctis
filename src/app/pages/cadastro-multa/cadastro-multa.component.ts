@@ -30,6 +30,13 @@ export class CadastroMultaComponent implements OnInit {
     });
   }
 
+  tipoMultas = [
+    { tipo: 'Gravíssima' },
+    { tipo: 'Grave' },
+    { tipo: 'Média' },
+    { tipo: 'Leve' },
+  ];
+
   back() {
     this.router.navigateByUrl('/home')
   }

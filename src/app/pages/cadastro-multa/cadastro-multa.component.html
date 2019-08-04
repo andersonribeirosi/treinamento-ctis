@@ -16,12 +16,18 @@
       <input formControlName="placa" type="text" placeholder="Insira a Placa" #placa required>
     </div>
 
-    <div class="column">
+    <!-- <div class="column">
         <select formControlName="tipoMulta" class="form-control col-md-5" id="tipoMulta" name="tipoMulta" required>
           <option value="" disabled selected hidden>Tipo de Multa</option>
           <option *ngFor="let multa of listMultas" [value]="multa.tipoMulta"> {{multa.tipoMulta}}</option>
         </select>
-      </div>
+      </div> -->
+      <div class="column">
+          <select formControlName="tipoMulta" class="form-control col-md-5" required>
+            <option value="" disabled selected hidden>Tipo de Multa</option>
+            <option *ngFor="let multa of tipoMultas" [value]="multa.tipo"> {{multa.tipo}}</option>
+          </select>
+        </div>
 
     <button class="button" [disabled]="cadastroMultaForm.invalid" type="submit" (click)="cadastrarMulta()"><b>Cadastrar Multa</b></button>
   </form>

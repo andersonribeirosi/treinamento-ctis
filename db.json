@@ -2,39 +2,9 @@
   "cadastroMulta": [
     {
       "placa": "NPT0190",
-      "data": "03/08/2019",
-      "tipoMulta": "Leve",
-      "id": 6
-    },
-    {
-      "placa": "KNV0133",
-      "data": "03/08/2019",
-      "tipoMulta": "Grave",
-      "id": 8
-    },
-    {
-      "placa": "KKK3130",
-      "data": "03/08/2019",
-      "tipoMulta": "Grave",
-      "id": 9
-    },
-    {
-      "placa": "MOR1904",
-      "data": "2019-08-09",
-      "tipoMulta": "Leve",
-      "id": 10
-    },
-    {
-      "placa": "NPT0190",
-      "data": "2019-08-09",
-      "tipoMulta": "Leve",
-      "id": 11
-    },
-    {
-      "placa": "NPT0190",
-      "data": "2019-08-15",
-      "tipoMulta": "Grave",
-      "id": 12
+      "data": "2019-08-10",
+      "tipoMulta": "Gravíssima",
+      "id": 1
     }
   ],
   "comments": [
