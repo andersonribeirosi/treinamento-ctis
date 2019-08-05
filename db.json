@@ -29,6 +29,14 @@
       "modeloVeiculo": "sasa",
       "anoFabricacao": "sasa",
       "id": 2
+    },
+    {
+      "chassi": "1234556",
+      "renavam": "434578",
+      "marcaVeiculo": "sedan",
+      "modeloVeiculo": "corsa",
+      "anoFabricacao": "2009",
+      "id": 3
     }
   ],
   "profile": [

@@ -33,7 +33,7 @@ export class CadastroVeiculoSimplesComponent implements OnInit {
   }
 
   back() {
-    this.router.navigateByUrl('/home')
+    this.router.navigateByUrl('/home/cadastrarVeiculo')
   }
 
   cadastrarVeiculoSimples(){
@@ -42,13 +42,13 @@ export class CadastroVeiculoSimplesComponent implements OnInit {
       
     } else {
       this.rest.addVeiculoSimples(this.cadastroVeiculoSimplesForm.value).subscribe(
-        success => console.log('cadastrado com sucesso'),
-        error => console.log('erro ao cadastradar nova multa'),
+        success => alert('cadastrado com sucesso'),
+        error => console.log('erro ao cadastradar novo veículo'),
         () => console.log('request complete')
       );
 
       this.cadastroVeiculoSimplesForm.reset();
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/home/cadastrarVeiculo');
     }
   }
 
