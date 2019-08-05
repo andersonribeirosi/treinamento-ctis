@@ -3,7 +3,7 @@
   </div>
   <div><img class="back" src="../../assets/left-arrow.svg" (click)="back()"></div>
 
-<form style="padding: 80px; padding-top: -25px;" [formGroup]="cadastroVeiculoSimplesForm">
+<form [formGroup]="cadastroVeiculoSimplesForm">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Número do chassi do veículo</label>
@@ -36,3 +36,5 @@
   </div>
   <button type="submit" [disabled]="cadastroVeiculoSimplesForm.invalid"  (click)="cadastrarVeiculoSimples()" class="btn btn-primary">Cadastrar Veículo</button>
 </form>
+
+<app-tab-cadastro-simples></app-tab-cadastro-simples>

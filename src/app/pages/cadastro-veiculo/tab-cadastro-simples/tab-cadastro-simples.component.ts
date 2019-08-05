@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VeiculoSimplesService } from 'src/app/services/veiculo-simples/veiculo-simples.service';
+import { VeiculoSimplesModel } from 'src/app/models/veiculos-simples-model';
 
 @Component({
   selector: 'app-tab-cadastro-simples',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabCadastroSimplesComponent implements OnInit {
 
-  constructor() { }
+  veiculoSimples: VeiculoSimplesModel[];
+  filterVeiculoSimples = '';
+
+  constructor(private rest: VeiculoSimplesService) { }
 
   ngOnInit() {
+    this.buscarVeiculosSimples();
+  }
+
+  buscarVeiculosSimples() {
+    this.rest.getVeiculoSimples().subscribe((data: VeiculoSimplesModel[]) => {
+      this.veiculoSimples = data;
+      console.log(this.veiculoSimples);
+
+    });
+
   }
 
 }

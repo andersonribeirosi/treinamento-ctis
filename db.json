@@ -21,6 +21,14 @@
       "modeloVeiculo": "sedan",
       "anoFabricacao": "2008",
       "id": 1
+    },
+    {
+      "chassi": "sasas",
+      "renavam": "asasa",
+      "marcaVeiculo": "sasas",
+      "modeloVeiculo": "sasa",
+      "anoFabricacao": "sasa",
+      "id": 2
     }
   ],
   "profile": [

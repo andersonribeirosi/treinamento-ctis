@@ -1,3 +1,35 @@
-<p>
-  tab-cadastro-simples works!
-</p>
+<div class="filter">
+    <input type="text" class="form-control" name="filterVeiculoSimples" placeholder="Search..." [(ngModel)]="filterVeiculoSimples">
+  </div>
+  
+  <div class="container">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr class="align">
+          <th scope="col">Chassi</th>
+          <th scope="col">Renavam</th>
+          <th scope="col">Marca do Veiculo</th>
+          <th scope="col">Modelo do Veiculo</th>
+          <th scope="col">Ano de Fabricação</th>
+          <th scope="col"></th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="align" *ngFor="let veiculo of veiculoSimples | filterVeiculo: filterVeiculoSimples">
+          <td>{{ veiculo.chassi }}</td>
+          <td>{{ veiculo.renavam }}</td>
+          <td>{{ veiculo.marcaVeiculo }}</td>
+          <td>{{ veiculo.modeloVeiculo }}</td>
+          <td>{{ veiculo.anoFabricacao }}</td>
+  
+          <td>
+            <button class="btn btn-outline-primary" (click)="removerMulta(multa.id)">
+              <img src="../../assets/lixeira.svg" class="card-img-top" alt="..." />
+            </button>
+  
+  
+          </td>
+        </tr>
+      </tbody>
+    </table>

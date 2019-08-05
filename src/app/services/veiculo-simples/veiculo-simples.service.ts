@@ -15,4 +15,9 @@ export class VeiculoSimplesService {
   addVeiculoSimples(veiculoSimples: VeiculoSimplesModel): Observable<VeiculoSimplesModel> {
     return this.http.post<VeiculoSimplesModel>(`${API.BASE_URL}${API.ADD_VEICULOS_SIMPLES}`, veiculoSimples).pipe(take(1));
   }
+
+  getVeiculoSimples(): Observable<any> {
+    return this.http.get(`${API.BASE_URL}${API.ADD_VEICULOS_SIMPLES}`);
+  }
+
 }

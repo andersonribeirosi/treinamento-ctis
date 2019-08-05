@@ -36,17 +36,6 @@ export class CadastroVeiculoSimplesComponent implements OnInit {
     this.router.navigateByUrl('/home')
   }
 
-  // getListMultas() {
-  //   this.rest.getMultas()
-  //     .subscribe(
-  //       res => {
-  //         this.listMultas = res
-  //         console.log(res)
-  //       },
-  //       error => {
-  //       })
-  // }
-
   cadastrarVeiculoSimples(){
     if (!this.cadastroVeiculoSimplesForm.valid) {
       console.log('erro ao cadastrar');

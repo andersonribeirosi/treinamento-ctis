@@ -16,6 +16,7 @@ import { CadastroVeiculoCompletoComponent } from './pages/cadastro-veiculo/cadas
 import { CadastroVeiculoSimplesComponent } from './pages/cadastro-veiculo/cadastro-veiculo-simples/cadastro-veiculo-simples.component';
 import { TabCadastroSimplesComponent } from './pages/cadastro-veiculo/tab-cadastro-simples/tab-cadastro-simples.component';
 import { TabCadastroCompletoComponent } from './pages/cadastro-veiculo/tab-cadastro-completo/tab-cadastro-completo.component';
+import { FilterPipeVeiculoSimples } from './pipes/filter-veiculo-simples/filter-veiculo-simples';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TabCadastroCompletoComponent } from './pages/cadastro-veiculo/tab-cadas
     CadastroVeiculoComponent,
     TabMultaComponent,
     FilterPipe,
+    FilterPipeVeiculoSimples,
     CadastroVeiculoCompletoComponent,
     CadastroVeiculoSimplesComponent,
     TabCadastroSimplesComponent,

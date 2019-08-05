@@ -35,3 +35,10 @@
       border-color: dodgerBlue;
       box-shadow: 0 0 8px 0 dodgerBlue;
     }
+
+    form{
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 25px;
+      padding-bottom: 15px;
+    }
