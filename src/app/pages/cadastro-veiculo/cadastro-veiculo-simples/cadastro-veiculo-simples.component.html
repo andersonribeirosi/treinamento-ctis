@@ -1,0 +1,38 @@
+<div id="span">
+    <span class="menu-label label-primary d-block text-center">CADASTRAR VEÍCULO SIMPLES</span>
+  </div>
+  <div><img class="back" src="../../assets/left-arrow.svg" (click)="back()"></div>
+
+<form style="padding: 80px; padding-top: -25px;" [formGroup]="cadastroVeiculoSimplesForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Número do chassi do veículo</label>
+      <input type="text" class="form-control" placeholder="chassi" formControlName="chassi" #chassi required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Renavam do veículo</label>
+      <input  type="text" class="form-control"
+      placeholder="Renavam" formControlName="renavam" #renavam required>
+    </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Marca do veículo</label>
+        <input type="text" class="form-control" placeholder="Marca Veículo" formControlName="marcaVeiculo" #marcaVeiculo required>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Modelo do veículo</label>
+        <input type="text" class="form-control" placeholder="Modelo Veículo" formControlName="modeloVeiculo" #modeloVeiculo required>
+      </div>
+    </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Ano de fabricação do veículo</label>
+      <input type="text" class="form-control" placeholder="Ano Fabricação" formControlName="anoFabricacao" #anoFabricacao required>
+    </div>
+
+  </div>
+  <button type="submit" [disabled]="cadastroVeiculoSimplesForm.invalid"  (click)="cadastrarVeiculoSimples()" class="btn btn-primary">Cadastrar Veículo</button>
+</form>

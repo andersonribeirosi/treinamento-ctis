@@ -5,13 +5,22 @@
       "data": "2019-08-10",
       "tipoMulta": "Gravíssima",
       "id": 1
+    },
+    {
+      "placa": "mnv2933",
+      "data": "2019-08-04",
+      "tipoMulta": "Média",
+      "id": 2
     }
   ],
-  "comments": [
+  "cadastroVeiculoSimples": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "chassi": "434342342",
+      "renavam": "4234324234",
+      "marcaVeiculo": "corsa",
+      "modeloVeiculo": "sedan",
+      "anoFabricacao": "2008",
+      "id": 1
     }
   ],
   "profile": [

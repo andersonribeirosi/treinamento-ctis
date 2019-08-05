@@ -8,7 +8,8 @@ export const environment = {
 
 export const API = {
   BASE_URL: 'http://localhost:3000/',
-  ADD_MULTA: 'cadastroMulta'
+  ADD_MULTA: 'cadastroMulta',
+  ADD_VEICULOS_SIMPLES: 'cadastroVeiculoSimples'
 }
 
 /*

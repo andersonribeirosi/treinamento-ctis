@@ -12,7 +12,10 @@ import { CadastroMultaComponent } from './pages/cadastro-multa/cadastro-multa.co
 import { CadastroVeiculoComponent } from './pages/cadastro-veiculo/cadastro-veiculo.component';
 import { TabMultaComponent } from './pages/cadastro-multa/tab-multa/tab-multa.component';
 import { FilterPipe } from './pipes/filter/filter.pipe';
-import { PrimeiraAquisicaoComponent } from './pages/cadastro-veiculo/primeira-aquisicao/primeira-aquisicao/primeira-aquisicao.component';
+import { CadastroVeiculoCompletoComponent } from './pages/cadastro-veiculo/cadastro-veiculo-completo/cadastro-veiculo-completo.component';
+import { CadastroVeiculoSimplesComponent } from './pages/cadastro-veiculo/cadastro-veiculo-simples/cadastro-veiculo-simples.component';
+import { TabCadastroSimplesComponent } from './pages/cadastro-veiculo/tab-cadastro-simples/tab-cadastro-simples.component';
+import { TabCadastroCompletoComponent } from './pages/cadastro-veiculo/tab-cadastro-completo/tab-cadastro-completo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { PrimeiraAquisicaoComponent } from './pages/cadastro-veiculo/primeira-aq
     CadastroVeiculoComponent,
     TabMultaComponent,
     FilterPipe,
-    PrimeiraAquisicaoComponent  
+    CadastroVeiculoCompletoComponent,
+    CadastroVeiculoSimplesComponent,
+    TabCadastroSimplesComponent,
+    TabCadastroCompletoComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,16 @@ import { PrimeiraAquisicaoComponent } from './pages/cadastro-veiculo/primeira-aq
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [HomeComponent, NavbarComponent, ConsultaMultaComponent, CadastroMultaComponent, CadastroVeiculoComponent, TabMultaComponent, PrimeiraAquisicaoComponent]
+  exports: [
+    HomeComponent,
+    NavbarComponent,
+    ConsultaMultaComponent,
+    CadastroMultaComponent,
+    CadastroVeiculoComponent,
+    TabMultaComponent,
+    CadastroVeiculoCompletoComponent,
+    CadastroVeiculoSimplesComponent,
+    TabCadastroSimplesComponent,
+    TabCadastroCompletoComponent]
 })
 export class AppModule { }
