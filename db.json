@@ -37,6 +37,14 @@
       "modeloVeiculo": "corsa",
       "anoFabricacao": "2009",
       "id": 3
+    },
+    {
+      "chassi": "644788321",
+      "renavam": "834338362",
+      "marcaVeiculo": "Chevrolet",
+      "modeloVeiculo": "celta",
+      "anoFabricacao": "2016",
+      "id": 4
     }
   ],
   "profile": [
