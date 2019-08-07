@@ -22,9 +22,21 @@ export class TabCadastroSimplesComponent implements OnInit {
     this.rest.getVeiculoSimples().subscribe((data: VeiculoSimplesModel[]) => {
       this.veiculoSimples = data;
       console.log(this.veiculoSimples);
-
     });
+  }
 
+  removerVeiculoSimples(id: number) {
+    console.log(id);
+
+    this.rest.excluirVeiculoSimples(id).subscribe(
+      success => console.log('Usuário removido com sucesso.'),
+      
+      error => console.log('Erro ao remover novo usuário.'),
+      
+      () => console.log('request complete'),
+    );
+    this.buscarVeiculosSimples();
+    window.location.reload();
   }
 
 }

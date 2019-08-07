@@ -1,3 +1,130 @@
-<p>
-  cadastro-veiculo-completo works!
-</p>
+<div id="span">
+  <span class="menu-label label-primary d-block text-center">CADASTRAR VEÍCULO COMPLETO</span>
+</div>
+<div><img class="back" src="../../assets/left-arrow.svg" (click)="back()"></div>
+
+<form [formGroup]="cadastroVeiculoCompletoForm">
+    <!-- Dados do Veículo -->
+<h5>Dados do Veículo</h5>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Número do chassi do veículo</label>
+      <input type="text" class="form-control" placeholder="chassi" formControlName="chassi" #chassi required>
+      <div id="error">{{ getError('chassi') }}</div>
+    </div>
+ 
+    <div class="form-group col-md-4">
+      <label>Renavam do veículo</label>
+      <input type="text" class="form-control" placeholder="Renavam" formControlName="renavam" #renavam required>
+      <div id="error">{{ getError('renavam') }}</div>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Marca do veículo</label>
+        <input type="text" class="form-control" placeholder="Marca Veículo" formControlName="marcaVeiculo" #marcaVeiculo
+          required>
+      <div id="error">{{ getError('marcaVeiculo') }}</div>
+
+      </div>
+  </div>
+
+  <div class="form-row">
+
+    <div class="form-group col-md-4">
+      <label>Modelo do veículo</label>
+      <input type="text" class="form-control" placeholder="Modelo Veículo" formControlName="modeloVeiculo"
+        #modeloVeiculo required>
+        <div id="error">{{ getError('modeloVeiculo') }}</div>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Ano de fabricação do veículo</label>
+        <input type="text" class="form-control" placeholder="Ano Fabricação" formControlName="anoFabricacao"
+          #anoFabricacao required>
+          <div id="error">{{ getError('anoFabricacao') }}</div>
+      </div>
+      <div class="form-group col-md-4">
+        <label>Cor</label>
+        <input type="text" class="form-control" placeholder="Cor" formControlName="cor"
+          #cor required>
+          <div id="error">{{ getError('cor') }}</div>
+      </div>
+  </div>
+
+  <!-- Dados do Proprietário -->
+<h5>Dados do Proprietário</h5>
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Nome</label>
+      <input type="text" class="form-control" placeholder="Nome" formControlName="nome"
+        #nome required>
+        <div id="error">{{ getError('nome') }}</div>
+    </div>
+    <div class="form-group col-md-4">
+      <label>CPF ou CNPJ</label>
+      <input type="text" class="form-control" placeholder="CPF ou CNPJ" formControlName="cpfCnpj"
+        #cpfCnpj required>
+        <div id="error">{{ getError('cpfCnpj') }}</div>
+    </div>
+    <div class="form-group col-md-4">
+        <label>RG</label>
+        <input type="text" class="form-control" placeholder="RG" formControlName="rg"
+          #rg required>
+          <div id="error">{{ getError('rg') }}</div>
+      </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>CNH</label>
+      <input type="text" class="form-control" placeholder="CNH" formControlName="cnh"
+        #cnh required>
+        <div id="error">{{ getError('cnh') }}</div>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Endereço</label>
+      <input type="text" class="form-control" placeholder="Endereço" formControlName="endereco"
+        #endereco required>
+        <div id="error">{{ getError('endereco') }}</div>
+    </div>
+    <div class="form-group col-md-2">
+        <label>Numero</label>
+        <input type="text" class="form-control" placeholder="Número" formControlName="numero"
+          #numero required>
+          <div id="error">{{ getError('numero') }}</div>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group col-md-4">
+        <label>Complemento</label>
+        <input type="text" class="form-control" placeholder="complemento" formControlName="complemento"
+          #complemento required>
+          <div id="error">{{ getError('complemento') }}</div>
+      </div>
+      <div class="form-group col-md-3">
+        <label>Bairro</label>
+        <input type="text" class="form-control" placeholder="Bairro" formControlName="bairro"
+          #bairro required>
+          <div id="error">{{ getError('bairro') }}</div>
+      </div>
+      <div class="form-group col-md-3">
+          <label>Cidade</label>
+          <input type="text" class="form-control" placeholder="Cidade" formControlName="cidade"
+            #cidade required>
+            <div id="error">{{ getError('cidade') }}</div>
+        </div>
+        <div class="form-group col-md-2">
+            <label>CEP</label>
+            <input type="text" class="form-control" placeholder="CEP" formControlName="cep"
+            
+              #cep required>
+              <div id="error">{{ getError('cep') }}</div>
+          </div>
+    </div>
+
+
+  <button type="submit" [disabled]="cadastroVeiculoCompletoForm.invalid" (click)="cadastrarVeiculoCompleto()"
+    class="btn btn-primary">Cadastrar Veículo</button>
+</form>
+
+<app-tab-cadastro-completo></app-tab-cadastro-completo>

@@ -1,3 +1,37 @@
-<p>
-  tab-cadastro-completo works!
-</p>
+<div class="filter">
+  <input type="text" class="form-control" name="filterVeiculoCompleto" placeholder="Search..." [(ngModel)]="filterVeiculoCompleto">
+</div>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr class="align">
+        <th scope="col">Chassi</th>
+        <th scope="col">Renavam</th>
+        <th scope="col">Marca do Veiculo</th>
+        <th scope="col">Modelo do Veiculo</th>
+        <th scope="col">Ano de Fabricação</th>
+        <th scope="col">Nome do Proprietário</th>
+        <th scope="col"></th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="align" *ngFor="let veiculo of veiculoCompleto | filterVeiculo: filterVeiculoCompleto">
+        <td>{{ veiculo.chassi }}</td>
+        <td>{{ veiculo.renavam }}</td>
+        <td>{{ veiculo.marcaVeiculo }}</td>
+        <td>{{ veiculo.modeloVeiculo }}</td>
+        <td>{{ veiculo.anoFabricacao }}</td>
+        <td>{{ veiculo.nome }}</td>
+
+        <td>
+          <button class="btn btn-outline-primary" (click)="removerVeiculoCompleto(veiculo.id)">
+            <img src="../../assets/lixeira.svg" class="card-img-top" alt="..." />
+          </button>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>

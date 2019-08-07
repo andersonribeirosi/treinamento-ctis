@@ -8,11 +8,14 @@
     <div class="form-group col-md-6">
       <label>Número do chassi do veículo</label>
       <input type="text" class="form-control" placeholder="chassi" formControlName="chassi" #chassi required>
+      <div id="error">{{ getError('chassi')}}</div>
     </div>
+    
     <div class="form-group col-md-6">
       <label>Renavam do veículo</label>
       <input  type="text" class="form-control"
       placeholder="Renavam" formControlName="renavam" #renavam required>
+      <div id="error">{{ getError('renavam')}}</div>
     </div>
   </div>
 
@@ -20,10 +23,12 @@
       <div class="form-group col-md-6">
         <label>Marca do veículo</label>
         <input type="text" class="form-control" placeholder="Marca Veículo" formControlName="marcaVeiculo" #marcaVeiculo required>
+        <div id="error">{{ getError('marcaVeiculo')}}</div>
       </div>
       <div class="form-group col-md-6">
         <label>Modelo do veículo</label>
         <input type="text" class="form-control" placeholder="Modelo Veículo" formControlName="modeloVeiculo" #modeloVeiculo required>
+        <div id="error">{{ getError('modeloVeiculo')}}</div>
       </div>
     </div>
 
@@ -31,6 +36,7 @@
     <div class="form-group col-md-6">
       <label>Ano de fabricação do veículo</label>
       <input type="text" class="form-control" placeholder="Ano Fabricação" formControlName="anoFabricacao" #anoFabricacao required>
+      <div id="error">{{ getError('anoFabricacao')}}</div>
     </div>
 
   </div>

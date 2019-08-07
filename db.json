@@ -7,9 +7,9 @@
       "id": 1
     },
     {
-      "placa": "mnv2933",
-      "data": "2019-08-04",
-      "tipoMulta": "Média",
+      "placa": "mmm8104",
+      "data": "2019-08-06",
+      "tipoMulta": "Gravíssima",
       "id": 2
     }
   ],
@@ -47,9 +47,5 @@
       "id": 4
     }
   ],
-  "profile": [
-    {
-      "name": "typicode"
-    }
-  ]
+  "cadastroVeiculoCompleto": []
 }

@@ -13,11 +13,20 @@ export class VeiculoSimplesService {
   constructor(private http: HttpClient) { }
 
   addVeiculoSimples(veiculoSimples: VeiculoSimplesModel): Observable<VeiculoSimplesModel> {
-    return this.http.post<VeiculoSimplesModel>(`${API.BASE_URL}${API.ADD_VEICULOS_SIMPLES}`, veiculoSimples).pipe(take(1));
+    return this.http.post<VeiculoSimplesModel>(`${API.BASE_URL}${API.ADD_VEICULO_SIMPLES}`, veiculoSimples).pipe(take(1));
   }
 
   getVeiculoSimples(): Observable<any> {
-    return this.http.get(`${API.BASE_URL}${API.ADD_VEICULOS_SIMPLES}`);
+    return this.http.get(`${API.BASE_URL}${API.ADD_VEICULO_SIMPLES}`);
+  }
+
+  excluirVeiculoSimples(id): Observable<VeiculoSimplesModel> {
+    const url = `${API.BASE_URL}${API.ADD_VEICULO_SIMPLES}/${id}`;
+    return this.http.delete<VeiculoSimplesModel>(url).pipe(take(1));
+  }
+
+  buscarVeiculosSimples(): Observable<VeiculoSimplesModel[]> {
+    return this.http.get<VeiculoSimplesModel[]>(`${API.BASE_URL}${API.ADD_VEICULO_SIMPLES}`);
   }
 
 }

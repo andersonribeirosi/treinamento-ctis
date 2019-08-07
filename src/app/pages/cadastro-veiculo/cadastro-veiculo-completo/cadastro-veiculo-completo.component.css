@@ -1,0 +1,48 @@
+.menu-label {
+    color: white;
+    background-color: #424b52;
+    padding: 5px;
+    margin-top: 1em;
+    margin: 0 auto;
+    width: 260px;
+  }
+
+  img{
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .back{
+    width: 4%;
+    margin-left: 1%;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    }
+
+    input[type="text"] {
+      color: #363636;
+      border: 2px solid #aaa;
+      border-radius: 10px;
+      outline: none;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: dodgerBlue;
+      box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    form{
+      padding-left: 9%;
+      padding-right: 9%;
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+
+    #error{
+      color: red;
+      font-size: 10px;
+      padding-top: -4px;
+      margin: 2px 0px 4px 15px;
+    }
